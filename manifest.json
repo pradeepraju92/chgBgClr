@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "chgBgClr",
+  "version": "1.0",
+
+  "description": "changes background color of a webpage to black.",
+
+  "icons": {
+    "48": "icons/download.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.com/*"],
+      "js": ["chgBgClr.js"]
+    }
+  ]
+
+}
